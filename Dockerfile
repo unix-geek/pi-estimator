@@ -3,3 +3,4 @@ RUN  apt-get update -y && apt-get upgrade -y && apt-get install -y python3
 COPY pi.py /code/pi.py
 RUN  chmod +rx /code/pi.py
 ENV  PATH "/code:$PATH"
+CMD ["pi.py", "-h"]
